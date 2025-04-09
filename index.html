@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://github.com/panbapz/data/blob/main/json/bot.png?raw=true" type="image/x-icon">
+    <title>BotPan Chat</title>
+    <style>
+        @font-face {
+            font-family: "Bungee-Regular";
+            src: url("./font/Bungee-Regular.ttf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "Calistoga-Regular";
+            src: url("./font/Calistoga-Regular.ttf") format("opentype");
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bot Chat</h1>
+
+    <div id="initialSendButtonWrapper">
+        <div id="inputWrapper">
+            <textarea id="initialUserInput" placeholder="Hỏi bất cứ điều gì"></textarea>
+            <button id="initialSendButton" onclick="sendMessage(event)">Gửi</button>
+        </div>
+    </div>
+
+    <div id="chatbox">
+        <div id="messages">
+        </div>
+        <div id="sendButtonWrapper">
+            <div id="inputWrapper">
+                <textarea id="userInput" placeholder="Hỏi bất cứ điều gì"></textarea>
+                <button id="sendButton" onclick="sendMessage(event)">Gửi</button>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer">ChatBot Panbap có thể mắc sai lầm.</p>
+
+    <script src="https://cdn.jsdelivr.net/gh/panbapz/data/botjs.js"></script>
+
+</body>
+
+</html>
